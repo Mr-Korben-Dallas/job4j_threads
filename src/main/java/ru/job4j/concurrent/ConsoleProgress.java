@@ -3,7 +3,7 @@ package ru.job4j.concurrent;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ConsoleProgress implements Runnable{
+public class ConsoleProgress implements Runnable {
     @Override
     public void run() {
         int step = 0;
