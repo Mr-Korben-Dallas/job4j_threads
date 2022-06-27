@@ -14,7 +14,7 @@ public class ConsoleProgress implements Runnable {
             try {
                 System.out.print("\rLoading: " + characters.get(step));
                 Thread.sleep(500);
-                step = (step < 3) ? ++step : 0;
+                step = (step < 3) ? step + 1 : 0;
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
