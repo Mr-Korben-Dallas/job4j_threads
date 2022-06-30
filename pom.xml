@@ -88,6 +88,11 @@
             <artifactId>json</artifactId>
             <version>20220320</version>
         </dependency>
+        <dependency>
+            <groupId>net.jcip</groupId>
+            <artifactId>jcip-annotations</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
     <build>
