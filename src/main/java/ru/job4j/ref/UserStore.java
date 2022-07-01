@@ -23,7 +23,7 @@ public class UserStore {
         return map.remove(user.getId(), user);
     }
 
-    public boolean transfer(int fromId, int toId, int amount) {
+    public boolean transfer(final int fromId, final int toId, final int amount) {
         boolean result = false;
         User u1 = map.get(fromId);
         User u2 = map.get(toId);
@@ -32,5 +32,9 @@ public class UserStore {
             u2.setAmount(u2.getAmount() + amount);
         }
         return result;
+    }
+
+    public Map<Integer, User> ass() {
+        return map;
     }
 }

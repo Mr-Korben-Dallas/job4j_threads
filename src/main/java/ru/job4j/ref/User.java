@@ -5,6 +5,14 @@ public class User {
     private int amount;
     private String name;
 
+    public User() {
+    }
+
+    public User(int id, int amount) {
+        this.id = id;
+        this.amount = amount;
+    }
+
     public static User of(String name) {
         User user = new User();
         user.name = name;
