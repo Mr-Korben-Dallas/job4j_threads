@@ -33,8 +33,4 @@ public class UserStore {
         }
         return result;
     }
-
-    public Map<Integer, User> ass() {
-        return map;
-    }
 }
