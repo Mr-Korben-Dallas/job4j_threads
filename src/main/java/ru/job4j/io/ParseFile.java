@@ -9,6 +9,7 @@ public class ParseFile implements GetContent {
     public ParseFile(File file) {
         this.file = file;
     }
+
     @Override
     public String content(Predicate<Character> predicate, File file) {
         StringBuilder output = new StringBuilder();
